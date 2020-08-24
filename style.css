@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#home-boi{
+    text-align: center;
+}
+
+#leaf{
+    animation:leaf 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+    
+}
+
+#right-hand{
+    animation:hand 1s ease-out infinite alternate;
+    transform-origin: top-left;
+    transform-box: fill-box; 
+}
+
+#left-hand{
+    animation:hand2 1s ease-out infinite alternate;
+    transform-origin: top-left;
+    transform-box: fill-box; 
+}
+
+#shoes{
+    animation:shoes 2s ease-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box; 
+}
+
+#body{
+    animation:body 4s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box; 
+}
+
+#web-context{
+    animation:content 6s ease-in-out;
+}
+
+#welcome-banner{
+    animation:content 3s ease-in-out;
+}
+
+#web-circle{
+    animation: wheel 4s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes leaf{
+    from{
+        transform: rotateX(20deg) rotateY(10deg);
+    }to{
+        transform: rotateX(0deg) rotateY(30deg);
+    }
+}
+
+@keyframes hand{
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }to{
+        transform: rotateX(30deg) rotateY(0deg) ;
+    }
+}
+
+@keyframes hand2{
+    from{
+        transform: rotateX(30deg) rotateY(0deg);
+    }to{
+        transform: rotateX(0deg) rotateY(0deg) ;
+    }
+}
+
+@keyframes shoes{
+    from{
+        transform: rotateX(0deg) rotateZ(0deg);
+    }to{
+        transform: rotateX(10deg) rotateZ(10deg);
+    }
+}
+
+@keyframes body{
+    from{
+        transform: rotateZ(0deg);
+    }to{
+        transform: rotateZ(8deg);
+    }
+}
+
+@keyframes content{
+    0% {
+        display: block;
+        opacity: 0;
+    }
+
+    33% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
